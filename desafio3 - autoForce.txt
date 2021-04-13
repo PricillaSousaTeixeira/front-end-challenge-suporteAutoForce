@@ -1,0 +1,64 @@
+let form = document.getElementsByTagName("fieldset");
+
+let textoArea = document.createElement("textarea"); 
+
+textoArea.setAttribute("class" , "form-control is-invalid");
+
+textoArea.setAttribute("name", "mensagem");
+
+textoArea.setAttribute("required", "");
+
+textoArea.setAttribute("placeholder", "Mensagem");
+
+form[1].appendChild(textoArea);
+
+
+
+let formulario = document.getElementsByClassName("form-group")[3];
+let primeiroFilho = formulario.firstChild;
+
+let select = document.createElement("select");
+
+formulario.insertBefore(select, primeiroFilho);
+
+let option = document.createElement("option");
+
+let option1 = document.createElement("option");
+
+let option2 = document.createElement("option");
+
+let option3 = document.createElement("option");
+
+select.setAttribute("name" , "carros");
+
+select.setAttribute("id" , "carros"); 
+
+select.setAttribute("class" , "choices__inner");
+
+select.setAttribute("data-type" , "select-one");
+
+select.setAttribute("role" , "combobox");
+
+option.setAttribute("value" , "suv");
+
+option1.setAttribute("value" , "sonda");
+
+option2.setAttribute("value" , " hatch");
+
+option3.setAttribute("value" , "Pickup");
+
+select.appendChild(option);
+
+select.appendChild(option1);
+
+select.appendChild(option2);
+
+select.appendChild(option3);
+
+option.textContent= "SUV";
+
+option1.textContent= "Sonda";
+
+option2.textContent= "Hatch";
+
+option3.textContent= "Pickup";

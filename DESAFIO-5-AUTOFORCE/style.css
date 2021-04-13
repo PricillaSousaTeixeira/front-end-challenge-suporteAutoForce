@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Squada+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baumans&display=swap');
+*{
+margin:0;
+box-sizing: border-box;
+padding: 0;
+font-family: Tw Cen MT;
+font-weight:bold;
+}
+body{
+background: #433b47;
+}
+.header{
+background:#18131f;
+padding: 20px 5px 20px;
+width: 100%;
+position: relative;
+display: flex;
+justify-content: space-between;
+}
+.topnav {
+overflow: hidden;
+}
+
+.topnav #myLinks {
+display: none;
+}
+i.fa-bars{
+font-size: 25px;
+}
+
+.topnav a {
+color: white;
+padding: 14px 16px;
+text-decoration: none;
+font-size: 17px;
+display: block;
+}
+
+.topnav a.icon {
+background:#18131f;
+display: flex;
+right: 0;
+top: 0;
+}
+
+#logo p{
+font-size: 30pt;
+font-family: 'Squada One';
+font-weight:bold;
+font-style:italic;
+color: #edede2;
+}
+#fiat{
+margin-right: 35px;
+}
+#fiat p{
+font-size: 30pt;
+font-family: 'Baumans', cursive;
+color:#ff1430;
+font-weight:normal;
+}
+.contato .social-field{
+padding: 0.5rem;
+cursor: pointer;
+float: left;
+
+}
+.contato .social-field a{
+text-decoration: none;
+color:white;
+background: #ff1430;
+padding:8px 12px;
+border-radius: 100%;
+font-size: 1.5rem;
+}
+
+.contato .social-field a:hover{
+background:#fb2d46; ;
+}
+#whatsapp a{
+background: #2fb640;
+}
+#whatsapp a:hover{
+background: #2ba93b;
+}
+.contato .social-field a i {
+margin: 0.1rem;
+width: 15px;
+}
+
+/*------------------------------------------------------------------*/
+.accordion0 {
+background-color: #ff1430;
+color: #ffffff;
+cursor: pointer;
+padding: 20px;
+width: 100%;
+border: none;
+text-align: left;
+outline: none;
+font-size: 15pt;
+transition: 0.4s;
+}
+
+.active, .accordion0:hover {
+background-color:#fb2d46;
+}
+.accordion0:after {
+content: '\221F';
+color: #fff;
+font-weight: bold;
+float: right;
+margin-right: 30px;
+transform: rotate(135deg);
+}
+
+.section{
+width: 97%;
+margin: auto;
+}
+.sobre{
+margin-left: 30px;
+}
+.accordion {
+background: #433b47;
+color: #ffffff;
+cursor: pointer;
+padding: 18px;
+width: 97%;
+border:none;
+border-bottom: 2px solid #5a535e;
+text-align: left;
+outline: none;
+font-size: 15pt;
+transition: 0.4s;
+}
+
+#novo{
+display: flex;
+}
+.novo{
+margin-left: 10px;
+padding: 3px 8px;
+background:#ff1430;
+border-radius: 8px;
+font-size: 15px;
+}
+.active, .accordion:hover {
+background-color: #5a535e;
+}
+
+.panel {
+width: 97%;
+padding:0 30px;
+background-color: white;
+max-height: 0;
+overflow: hidden;
+transition: max-height 0.2s ease-out;
+}
+.footer{
+background:#2b222f;
+padding: 0px 0px 60px;
+max-width: 100vw;
+position: relative;
+}
+
+.w3-light-grey{
+border-radius: 10px;
+height: 10px;
+width:97% ;
+}
+.w3-grey{
+height: 10px;
+border-radius: 10px;
+width:50%;
+background:linear-gradient(45deg,#fea724, #fe3230);
+}
+#whats{
+float: right;
+padding: 0px 40px;
+color:#ffffff;
+bottom: 30px;
+position: sticky;
+z-index: 999;
+}
+
+#whats a{
+background: #2fb640;
+padding:8px 15px;
+font-size: 3rem;
+border-radius: 100%;
+
+}
+#whats a:hover{
+background: #2ba93b;
+}
+.pfooter{
+text-align: center;
+border:2px solid #ff1430;
+font-size: 14pt;
+padding:20px 0px;
+width: 92%;
+margin:auto;
+position: relative;
+color:#ffffff;
+}
+@media screen and (max-width: 600px) {
+.accordion0:after{
+margin-right: 5px;
+}
+#fiat{
+margin-right: 5px;
+}
+#whats{
+padding: 0px 10px;
+}
+}
+@media screen and (max-width: 350px) {
+
+i.fa-bars{
+font-size: 20px;
+}
+#logo p{
+font-size: 20pt;
+}
+#fiat p{
+margin-right: 15px;
+font-size: 20pt;
+}
+.contato .social-field a{
+padding:5px 8px;
+font-size: 1.2rem;
+}
+#whats{
+padding: 0px 10px;
+}
+#whats a{
+padding:5px 10px;
+font-size: 2.3rem;
+}
+.pfooter{
+font-size: 16px;
+}
+}

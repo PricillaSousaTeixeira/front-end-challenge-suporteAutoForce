@@ -1,0 +1,17 @@
+let whatsapp = document.querySelectorAll(".header-mobile__whatsapp-link")
+
+whatsapp[0].setAttribute("data-phones", "disabled");
+
+whatsapp[1].setAttribute("data-phones", "disabled");
+
+whatsapp[2].setAttribute("data-phones", "disabled");
+
+whatsapp[3].setAttribute("data-phones", "disabled");
+
+whatsapp[4].setAttribute("data-phones", "disabled");
+
+whatsapp[5].setAttribute("data-phones", "disabled");
+
+
+
+
