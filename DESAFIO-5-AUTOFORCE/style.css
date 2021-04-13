@@ -9,6 +9,7 @@ font-weight:bold;
 }
 body{
 background: #433b47;
+position: relative;
 }
 .header{
 background:#18131f;
@@ -90,6 +91,21 @@ width: 15px;
 }
 
 /*------------------------------------------------------------------*/
+.accordion {
+background: #433b47;
+color: #ffffff;
+cursor: pointer;
+margin-left: 5px;
+padding: 18px 0px 18px ;
+width: 97%;
+border:none;
+border-bottom: 2px solid #5a535e;
+border-left:20px;
+text-align: left;
+outline: none;
+font-size: 15pt;
+transition: 0.4s;
+}
 .accordion0 {
 background-color: #ff1430;
 color: #ffffff;
@@ -118,24 +134,11 @@ transform: rotate(135deg);
 .section{
 width: 97%;
 margin: auto;
+position: relative;
 }
 .sobre{
 margin-left: 30px;
 }
-.accordion {
-background: #433b47;
-color: #ffffff;
-cursor: pointer;
-padding: 18px;
-width: 97%;
-border:none;
-border-bottom: 2px solid #5a535e;
-text-align: left;
-outline: none;
-font-size: 15pt;
-transition: 0.4s;
-}
-
 #novo{
 display: flex;
 }
@@ -149,7 +152,6 @@ font-size: 15px;
 .active, .accordion:hover {
 background-color: #5a535e;
 }
-
 .panel {
 width: 97%;
 padding:0 30px;
@@ -161,10 +163,7 @@ transition: max-height 0.2s ease-out;
 .footer{
 background:#2b222f;
 padding: 0px 0px 60px;
-max-width: 100vw;
-position: relative;
 }
-
 .w3-light-grey{
 border-radius: 10px;
 height: 10px;
@@ -182,7 +181,6 @@ padding: 0px 40px;
 color:#ffffff;
 bottom: 30px;
 position: sticky;
-z-index: 999;
 }
 
 #whats a{
@@ -202,7 +200,6 @@ font-size: 14pt;
 padding:20px 0px;
 width: 92%;
 margin:auto;
-position: relative;
 color:#ffffff;
 }
 @media screen and (max-width: 600px) {
